@@ -318,6 +318,13 @@ a {
 }
 
 .slider .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 120px;
   padding-right: 120px;
 }
@@ -409,7 +416,7 @@ a {
   transition: all .6s ease-out;
   margin-left: auto;
   margin-right: auto;
-  display: table;
+  display: inline-block;
 }
 
 .slider__button::before {
